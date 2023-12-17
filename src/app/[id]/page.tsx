@@ -38,7 +38,7 @@ export default async function IdPage({
                     return (
                       <img
                         key={index}
-                        alt={element.title || el.title}
+                        alt={element.title || el.title || ''}
                         src={element.image_url}
                         className="h-[320px]"
                       />

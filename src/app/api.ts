@@ -11,6 +11,7 @@ export interface CaseStudy {
     body_elements: (
       | {
           image_url: string;
+          title: string;
         }
       | string
     )[];
@@ -31,6 +32,6 @@ export const api = {
         .list()
         .then(
           (caseStudies) => caseStudies.find((caseStudy) => caseStudy.id === id)!
-        ),
-  },
+        )
+  }
 };
